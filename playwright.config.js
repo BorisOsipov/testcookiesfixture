@@ -17,7 +17,7 @@ const config = {
                 }
             ],
             cookies: [
-                {name: "foo", value: "bar_from_config", url: "https://playwright.dev"},
+                {name: "foo", value: "foo_from_config", url: "https://playwright.dev"},
                 {name: "opa", value: "zopa", url: "https://playwright.dev"}
             ]
         }
