@@ -7,7 +7,12 @@ exports.test = base.test.extend({
                 cookies: [
                     {
                         name: "foo",
-                        value: "cookie from fixture",
+                        value: "foo cookie from fixture",
+                        url: "https://playwright.dev"
+                    },
+                    {
+                        name: "bar",
+                        value: "bar cookie from fixture",
                         url: "https://playwright.dev"
                     }
                 ],
