@@ -6,9 +6,10 @@ test('test', async ({ page, context }) => {
     const cookies = await context.cookies(['https://playwright.dev/'])
     // fails
     // assert.equal(cookies.length, 1)
-    //assert.equal(cookies[0].value, 'cookie from fixture')
+    assert.equal(cookies[0].value, 'cookie from fixture')
 
-    //assert.equal(cookies[1].value, 'zopa')
+    // assert.equal(cookies[1].value, 'zopa')
     const lsItem = await page.evaluate(() => window.localStorage.getItem('foo'));
+    // fails
     assert.equal(lsItem, 'localStorage from fixture')
 });
